@@ -1,0 +1,109 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.user-create {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  overflow: auto;
+  overflow-x: hidden;
+  height: 100%;
+}
+
+input {
+  background-color: rgb(13, 26, 21);
+  width: 335px;
+  padding: 3px;
+  color: white;
+  height: 30px;
+  border: none;
+  z-index:2;
+  border: 1px solid rgb(0, 206, 117);
+  border-top: none;
+  padding-left: 8px;
+}
+
+textarea {
+  background-color: rgb(13, 26, 21);
+  width: 335px;
+  padding: 3px;
+  color: white;
+  height: 30px;
+  border: none;
+  resize: none;
+  z-index:2;
+  border: 1px solid rgb(0, 206, 117);
+  border-top: none;
+  padding-left: 8px;
+}
+
+.confirm-image {
+  padding: 5px;
+}
+
+.post-create-button {
+  width: 300px;
+  margin-left: 5px;
+  border-radius: 5px;
+}
+
+.label {
+  border: 0.5px solid rgb(0, 206, 117);
+  border-top: none;
+  background-color: rgb(0, 125, 77);
+  width: 100vw;
+  padding: 5px;
+}
+
+.post-create-user {
+  border: 0.5px solid rgb(0, 206, 117);
+  background-color: rgb(7, 116, 74);
+  padding: 5px;
+}
+
+::placeholder {
+  color: rgb(255, 255, 255);
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+ color: rgb(255, 255, 255);
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+ color: rgb(255, 255, 255);
+}
+
+::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}
+
+.post-create-title-date {
+  text-transform: uppercase;
+}
+
+.post-create-textarea {
+  height: 50px;
+}
+
+.image-confirm {
+  visibility: hidden;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+@media only screen and (max-width: 800px) {
+  input {
+    width: 97.5vw;
+    border: none;
+  }
+  textarea {
+    width: 97.5vw;
+    border: none;
+  }
+}
+

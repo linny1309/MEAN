@@ -1,0 +1,54 @@
+<div class="user-list" id="userList">
+  <form autocomplete="off" class="search">
+    <div class="autocomplete" style="width:300px;">
+      <input class="search-input" id="myInput" type="text" name="myCountry" placeholder="Search for users">
+    </div>
+  </form>
+  <mat-paginator class="paginator"></mat-paginator>
+  <div (click)="toggleFilter()" class="filter-container" id="filterContainer">
+    <mat-icon class="filter-icon no-select">filter_alt</mat-icon>
+    <span class="filter-title no-select">Filters</span>
+
+  </div>
+  <div class="user" id="user{{i}}" *ngFor="let demo of demoLoop; let i = index" (click)="togglePanel(panel, i)" (mouseenter)="hover(true, i)" (mouseleave)="hover(false, i)">
+    <div>
+      <div class="image-container"></div>
+      <div class="full-name">F. Lastname</div>
+      <div class="phone-number">(555) 555-5555</div>
+      <div class="email">example@example.com</div>
+      <mat-icon class="expand" aria-hidden="false" id="expand{{i}}" #expand>expand_more</mat-icon>
+    </div>
+    <div class="panel" id="panel{{i}}" #panel>
+      <table>
+        <tr>
+          <td class="category">First name</td>
+          <td>Firstname</td>
+        </tr>
+        <tr>
+          <td class="category">Last name</td>
+          <td>Lastname</td>
+        </tr>
+        <tr>
+          <td class="category">School</td>
+          <td>W3Schools</td>
+        </tr>
+        <tr>
+          <td class="category">Degree</td>
+          <td>Computer Science</td>
+        </tr>
+        <tr>
+          <td class="category">Company</td>
+          <td>Enron</td>
+        </tr>
+        <tr>
+          <td class="category">Year started</td>
+          <td>1995</td>
+        </tr>
+        <tr>
+          <td class="category">Year finished</td>
+          <td>1998</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>

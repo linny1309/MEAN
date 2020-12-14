@@ -1,0 +1,18 @@
+<div class="sidebar" id="sidebar">
+  <div class="menu" id="menu">
+    <div class="menu-list">
+      <div>
+        <div (click)="changeNav(mobileComponents[i])" *ngFor="let menuItem of menuItems, let i = index" class="menu-item-div" id="menuItemDiv{{i}}">
+          <mat-icon class="menu-item-icon">{{menuIcons[i]}}</mat-icon>
+          <span class="menu-item no-select">{{menuItem}}</span>
+        </div>
+      </div>
+      <div>
+        <div class="menu-item-div-spoof">
+          <i class="material-icons"></i>
+          <span class="menu-item-spoof no-select"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
